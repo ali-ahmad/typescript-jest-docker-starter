@@ -1,0 +1,12 @@
+{
+  "ignore": ["**/*.test.ts", "**/*.spec.ts", "node_modules"],
+  "watch": ["index.ts", "src"],
+  "ext": "ts",
+  "execMap": {
+    "ts": "node --experimental-specifier-resolution=node --loader ts-node/esm"
+  },
+  "verbose": true,
+  "env": {
+    "TS_NODE_PROJECT": "./tsconfig.json"
+  }
+}
